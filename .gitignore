@@ -1,0 +1,12 @@
+# Data files and directories
+data/
+data/**
+*.csv
+*.parquet
+
+# Virtual environments & Python artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.env/
