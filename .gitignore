@@ -1,12 +1,58 @@
-# Data files and directories
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Model checkpoints, weights, and fine-tuned directories
+checkpoints/
+checkpoints/**
+deberta_v3_finetuned/
+deberta_v3_finetuned/**
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+*.ckpt
+
+# Serialized model artifacts / encoders
+*.pkl
+*.pickle
+*.joblib
+
+# Datasets and submissions
 data/
 data/**
 *.csv
 *.parquet
+*.feather
+*.h5
+submission/
+submission.parquet
+submission.parquet/
 
-# Virtual environments & Python artifacts
+# Jupyter & IPython notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache & build artifacts
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints/
-venv/
-.env/
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
