@@ -6,8 +6,18 @@
 # Model checkpoints, weights, and fine-tuned directories
 checkpoints/
 checkpoints/**
+*checkpoint*/
+*checkpoint*/**
 deberta_v3_finetuned/
 deberta_v3_finetuned/**
+new_data_fineTuned_model/
+new_data_fineTuned_model/**
+ensemble_pipeline/
+ensemble_pipeline/**
+ensemble_pipeline_*/
+ensemble_pipeline_*/**
+ensemble_pipeline_1*/
+ensemble_pipeline_1*/**
 *.safetensors
 *.bin
 *.pt
@@ -15,6 +25,9 @@ deberta_v3_finetuned/**
 *.onnx
 *.h5
 *.ckpt
+*.zip
+*.tar
+*.tar.gz
 
 # Serialized model artifacts / encoders
 *.pkl
